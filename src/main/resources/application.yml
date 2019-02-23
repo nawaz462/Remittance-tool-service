@@ -1,0 +1,12 @@
+
+spring:
+  application:
+    name: remittance-tool-service
+
+server:
+  port: 8089
+
+spring.h2.console.enabled: true
+
+spring.datasource.driverClassName: org.h2.Driver
+spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
