@@ -8,4 +8,6 @@ import org.springframework.stereotype.Service;
 public interface TPharmaSearchService {
 
     PharmaDetails getPharmaDetails(PharmaSearchRequest pharmaSearchRequest) ;
+
+    PharmaSearchRequest getPharmaSearchDetails(PharmaSearchRequest pharmaSearchRequest);
 }

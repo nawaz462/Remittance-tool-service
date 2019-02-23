@@ -33,4 +33,10 @@ public class TPharmaSearchController {
         return "Records added successfully";
     }
 
+    @RequestMapping(value = "/searchDetails", method = RequestMethod.POST)
+    public PharmaSearchRequest getPharmaSearchDetails(@RequestBody PharmaSearchRequest pharmaSearchRequest){
+
+        return tPharmaSearchService.getPharmaSearchDetails(pharmaSearchRequest);
+    }
+
 }

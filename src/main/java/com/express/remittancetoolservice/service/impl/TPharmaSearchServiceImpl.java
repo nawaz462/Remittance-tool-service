@@ -18,4 +18,9 @@ public class TPharmaSearchServiceImpl implements TPharmaSearchService {
     public PharmaDetails getPharmaDetails(PharmaSearchRequest pharmaSearchRequest) {
         return tPharmaSearchRepo.findByNcpdpNbr(pharmaSearchRequest.getNcpdpNbr());
     }
+
+    @Override
+    public PharmaSearchRequest getPharmaSearchDetails(PharmaSearchRequest pharmaSearchRequest) {
+        return tPharmaSearchRepo.getSearchResponse(pharmaSearchRequest.getNcpdpNbr());
+    }
 }
